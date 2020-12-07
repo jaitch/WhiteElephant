@@ -1,6 +1,5 @@
 .App {
-  /*background-color: darkgreen;*/
-  /*background-size: cover;*/
+  background-size: cover;
 }
 
 .room {
@@ -10,7 +9,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .room::before {
@@ -24,6 +23,7 @@
   bottom: 0px;
   opacity: .3;
 }
+
 
 .App-header {
   background-color: darkgreen;

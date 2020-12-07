@@ -9,29 +9,35 @@ class NewPersonForm extends Component {
         super(props);
 
         this.state = {
-            value: ''
+            value: "",
         };
-        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleChange(event) {
-        this.setState({value: event.target.value});
+    handleChange = (event) => {
+        this.setState({
+            value: event.target.value
+        });
+        console.log(`new name: ${event.target.value}`)
     }
-    handleSubmit(event) {
-        alert('A name was submitted: ' + this.state.value);
+    handleSubmit = (event) => {
         event.preventDefault();
+
+        const newPerson = this.state.value;
+        this.setState({
+            value: "",
+            });
+
+        this.props.addPersonCallback(newPerson);
     }
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
-            <label>
-                {this.props.varName}
-            Name:
-            </label>
-        <input type="text" value={this.state.value} onChange={this.handleChange} />
-        <input type="submit" value="Submit" onClick={this.handleSubmit} />
-    </form>
+            <form className="overlay">
+            <div>Name: </div>
+                <br></br>
+            <input type="text" value={this.state.value} onChange={this.handleChange} />
+            <input type="submit" value="Add" onClick={this.handleSubmit} />
+            </form>
         );
     }
 
@@ -40,6 +46,6 @@ class NewPersonForm extends Component {
 
 NewPersonForm.propTypes = {
     addPersonCallback: PropTypes.func.isRequired,
-};
+}
 
 export default NewPersonForm;

@@ -1,4 +1,15 @@
-.h3 {
+
+.list {
+    text-align: left;
     font-family: "American Typewriter";
     font-color: black;
+}
+
+.overlay {
+    position: relative;
+/*    background-color: rgba(0,0,0,0);*/
+    text-align: center;
+/*    left: 50px;*/
+/*justify-content: left;*/
+    margin-left: 30px;
 }
