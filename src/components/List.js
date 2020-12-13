@@ -39,7 +39,6 @@ class List extends Component {
             <div className="overlay">
                 <NewPersonForm addPersonCallback={this.onSubmit} />
                 <ul className="list">
-                    Participants:
 
                     {this.state.people.map((person, i) => {
                         return (

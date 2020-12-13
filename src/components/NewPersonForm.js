@@ -33,7 +33,7 @@ class NewPersonForm extends Component {
     render() {
         return (
             <form className="overlay">
-            <div>Name: </div>
+            <h3>Participants: </h3>
                 <br></br>
             <input type="text" value={this.state.value} onChange={this.handleChange} />
             <input type="submit" value="Add" onClick={this.handleSubmit} />
