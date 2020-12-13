@@ -3,6 +3,7 @@ import './App.css';
 import elephant from './elephant.png';
 import React from "react";
 import List from "./components/List";
+import Gifts from "./components/Gifts";
 
 
 
@@ -16,6 +17,7 @@ function App() {
         </header>
       <div className="room">
         <List />
+        <Gifts />
       </div>
     </main>
 
