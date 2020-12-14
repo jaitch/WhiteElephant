@@ -27,12 +27,27 @@ class List extends Component {
 
                     {this.props.people.map((person, i) => {
                         return (
-                            <li key={i}>{person}</li>
+                            <li
+                                key={i}>{person}
+                                <form>
+                                    <select class="custom-select">
+                                        <option value="0">Select gift:</option>
+                                        <option value="au">Gift 1</option>
+                                        <option value="ca">Gift 2</option>
+                                        <option value="usa">Gift 3</option>
+                                        <option value="usa">Gift 4</option>
+                                        <option value="usa">Gift 5</option>
+                                        <option value="usa">Gift 6</option>
+                                        <option value="usa">Gift 7</option>
+                                        <option value="usa">Gift 8</option>
+                                    </select>
+                                </form>
+                            </li>
                         )
                     })
                     }
                 </ul>
-                <button onClick={this.randomize}>Randomize</button>
+                <button onClick={this.randomize} className="button">Randomize</button>
             </div>
         )
     }

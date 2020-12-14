@@ -33,8 +33,8 @@ class NewPersonForm extends Component {
             <form className="overlay">
             <h3>Participants: </h3>
                 <br></br>
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
-            <input type="submit" value="Add" onClick={this.handleSubmit} />
+            <input className="box" type="text" value={this.state.value} onChange={this.handleChange} />
+            <input className="button" type="submit" value="Add" onClick={this.handleSubmit} />
             </form>
         );
     }

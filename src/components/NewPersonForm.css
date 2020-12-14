@@ -2,3 +2,16 @@
     font-family: "American Typewriter";
     font-color: black;
 }
+
+input {
+    background-color: indianred;
+}
+
+.box {
+    color: white;
+}
+
+.button {
+    background-color: white;
+    color: black;
+}
