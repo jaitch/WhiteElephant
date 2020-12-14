@@ -41,7 +41,7 @@ class Gifts extends Component {
                 </div>
                 <div>
                     <p>Gift 6</p>
-                    <Gift wrapped={gift6wrapped} unwrapped={gift6unwrapped} description="Spherical Vase & Sushi Book"/>
+                    <Gift wrapped={gift6wrapped} unwrapped={gift6unwrapped} description="Vase & Sushi Book"/>
                 </div>
             </div>
         )

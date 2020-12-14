@@ -36,6 +36,15 @@ class App extends Component {
         });
     }
 
+    selectGift = (i, gift) => {
+        let people = this.state.people;
+        let person = people[i];
+        person.gift = gift;
+        this.setState({
+            people
+        })
+    }
+
     render() {
         return (
             <main className="App">
@@ -44,7 +53,7 @@ class App extends Component {
                     <h1>A Very Merry Yenta Christmas</h1>
                 </header>
                 <div className="room">
-                    <List people={this.state.people} listPeopleCallback={this.listPeople} randomizeCallback={this.randomFunction}/>
+                    <List people={this.state.people} listPeopleCallback={this.listPeople} randomizeCallback={this.randomFunction} selectGiftCallback={this.selectGift}/>
                     <Gifts/>
                 </div>
             </main>

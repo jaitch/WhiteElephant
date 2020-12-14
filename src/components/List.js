@@ -30,16 +30,16 @@ class List extends Component {
                             <li
                                 key={i}>{person}
                                 <form>
-                                    <select class="custom-select">
+                                    <select class="custom-select" onSelect={this.handleSelect}>
                                         <option value="0">Select gift:</option>
-                                        <option value="au">Gift 1</option>
-                                        <option value="ca">Gift 2</option>
-                                        <option value="usa">Gift 3</option>
-                                        <option value="usa">Gift 4</option>
-                                        <option value="usa">Gift 5</option>
-                                        <option value="usa">Gift 6</option>
-                                        <option value="usa">Gift 7</option>
-                                        <option value="usa">Gift 8</option>
+                                        <option value="1">Gift 1</option>
+                                        <option value="2">Gift 2</option>
+                                        <option value="3">Gift 3</option>
+                                        <option value="4">Gift 4</option>
+                                        <option value="5">Gift 5</option>
+                                        <option value="6">Gift 6</option>
+                                        <option value="7">Gift 7</option>
+                                        <option value="8"   >Gift 8</option>
                                     </select>
                                 </form>
                             </li>
